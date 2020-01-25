@@ -1,5 +1,6 @@
 <template>
   <div class="hello">
+    <img src="./../assets/logo.png">
     <h1>{{ msg }}</h1>
     <h2>Essential Links</h2>
     <ul>
@@ -77,6 +78,14 @@
           target="_blank"
         >
           awesome-vue
+        </a>
+      </li>
+      <li>
+        <a
+          href="http://localhost:8080/Lesson33"
+          target="_blank"
+        >
+          Lesson33
         </a>
       </li>
     </ul>
