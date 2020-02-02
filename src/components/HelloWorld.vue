@@ -1,8 +1,8 @@
 <template>
-  <div class="hello">
-    <img src="./../assets/logo.png">
+  <div class='hello'>
+    <img src='./../assets/logo.png' />
     <h1>{{ msg }}</h1>
-    <h2>Essential Links</h2>
+    <!-- <h2>Essential Links</h2>
     <ul>
       <li>
         <a
@@ -79,14 +79,14 @@
         >
           awesome-vue
         </a>
+    </li>-->
+    <h2>udemy-vuejs</h2>
+    <ul>
+      <li>
+        <a href='/Lesson/33'>Lesson33</a>
       </li>
       <li>
-        <a
-          href="http://localhost:8080/Lesson33"
-          target="_blank"
-        >
-          Lesson33
-        </a>
+        <a href='/Lesson/34'>Lesson34</a>
       </li>
     </ul>
   </div>
@@ -105,7 +105,8 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h1, h2 {
+h1,
+h2 {
   font-weight: normal;
 }
 ul {

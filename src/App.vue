@@ -1,12 +1,20 @@
 <template>
   <div id="app">
-    <router-view/>
+    <router-view :commonSettings="commonSettings" />
   </div>
 </template>
 
 <script>
 export default {
-  name: 'App'
+  name: 'App',
+  data () {
+    return {
+      commonSettings: {
+        vueOfficial: 'https://jp.vuejs.org/',
+        top: '/'
+      }
+    }
+  }
 }
 </script>
 

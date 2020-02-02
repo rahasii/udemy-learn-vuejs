@@ -1,9 +1,18 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
-import Lesson33 from '@/components/Lesson33'
+import Lesson from '@/components/Lesson'
 
 Vue.use(Router)
+
+// Vue.component('button-counter', {
+//   data: function () {
+//     return {
+//       count: 0
+//     }
+//   },
+//   template: '<button v-on:click="count++">You clicked me {{ count }} times.</button>'
+// })
 
 export default new Router({
   mode: 'history',
@@ -14,9 +23,16 @@ export default new Router({
       component: HelloWorld
     },
     {
-      path: '/Lesson33',
-      name: 'Lesson33',
-      component: Lesson33
+      path: '/Lesson/:number',
+      name: 'Lesson',
+      component: Lesson
+      // ,
+      // children: [
+      //   {
+      //     path: 'ButtonCounter',
+      //     component: ButtonCounter
+      //   }
+      // ]
     }
   ]
 })
