@@ -1,14 +1,12 @@
 <template>
   <div>
-    <p>Lesson33</p>
+    <p>{{componentName}}</p>
     <ul>
       <li>
         <a v-bind:href="commonSettings.vueOfficial" v-if="toggle">Vue.js</a>
       </li>
       <li>
-        <a v-bind:href="commonSettings.top">v-bind TOP</a>
-        <br />
-        <a href="http://localhost:8080/">TOP</a>
+        <a v-bind:href="commonSettings.top">TOP</a>
       </li>
     </ul>
   </div>
@@ -19,7 +17,8 @@
 export default {
   name: 'Lesson33',
   props: {
-    commonSettings: Object
+    commonSettings: Object,
+    componentName: String
   },
   data () {
     return {

@@ -1,5 +1,5 @@
 <template>
-  <component v-bind:is="coponentName" :commonSettings="commonSettings"></component>
+  <component v-bind:is="componentName" :commonSettings="commonSettings" :componentName="componentName"></component>
 </template>
 
 <script>
@@ -17,7 +17,7 @@ export default {
   },
   data () {
     return {
-      coponentName: 'Lesson' + this.$route.params.number
+      componentName: 'Lesson' + this.$route.params.number
     }
   }
 }
