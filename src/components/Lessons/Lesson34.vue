@@ -39,7 +39,6 @@ export default {
       languages: ['JavaScript', 'Ruby', 'Python'],
       clicked: false,
       buttonName: 'Click'
-
     }
   },
   methods: {
