@@ -1,11 +1,10 @@
 <template>
   <div id="app">
+    <img src='./assets/logo.png' />
+    <hr>
     <router-view :commonSettings="commonSettings"/>
-    <ul>
-      <li>
-        <a v-bind:href="commonSettings.top">TOP</a>
-      </li>
-    </ul>
+    <hr>
+    <a v-bind:href="commonSettings.top">TOP</a>
   </div>
 </template>
 
@@ -33,5 +32,15 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+  list-style-type: none;
 }
+
+.lesson ul{
+  padding-left: 0px;
+}
+
+.lesson li{
+  list-style-type: none;
+}
+
 </style>

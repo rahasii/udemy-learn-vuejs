@@ -1,13 +1,11 @@
 <template>
-  <div>
+  <div class="lesson">
     <p>{{componentName}}</p>
-    <hr />
     <ul>
       <!-- <li v-for="language in languages">{{language}}</li> -->
       <!-- Elements in iteration expect to have 'v-bind:key' directives -->
       <li v-for="(language , key) in languages" :key="key">{{language}}</li>
     </ul>
-    <hr />
     <ul>
       <p>{{message}}</p>
     </ul>
@@ -16,11 +14,6 @@
     </ul>
     <ul>
       <input type="text" v-model="message" />
-    </ul>
-    <ul>
-      <li>
-        <a v-bind:href="commonSettings.top">TOP</a>
-      </li>
     </ul>
   </div>
 </template>

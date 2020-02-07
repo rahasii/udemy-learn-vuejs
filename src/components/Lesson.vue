@@ -3,7 +3,6 @@
     v-bind:is="componentName"
     :commonSettings="commonSettings"
     :componentName="componentName"
-    :bpi="bpi"
   ></component>
 </template>
 
@@ -20,8 +19,7 @@ export default {
     Lesson62: Lesson62
   },
   props: {
-    commonSettings: Object,
-    bpi: Object
+    commonSettings: Object
   },
   data () {
     return {

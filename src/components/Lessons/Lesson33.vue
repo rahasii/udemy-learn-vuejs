@@ -1,13 +1,13 @@
 <template>
-  <div>
+  <div class="lesson">
     <p>{{componentName}}</p>
     <ul>
       <li>
         <a v-bind:href="commonSettings.vueOfficial" v-if="toggle">Vue.js</a>
       </li>
-      <li>
+      <!-- <li>
         <a v-bind:href="commonSettings.top">TOP</a>
-      </li>
+      </li> -->
     </ul>
   </div>
 </template>
