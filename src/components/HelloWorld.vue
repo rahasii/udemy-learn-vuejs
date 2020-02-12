@@ -93,6 +93,9 @@
       <li>
         <a href='/Lesson/62'>Lesson62</a>
       </li>
+      <li>
+        <a href='/Lesson/76'>Lesson76</a>
+      </li>
     </ul>
   </div>
 </template>
