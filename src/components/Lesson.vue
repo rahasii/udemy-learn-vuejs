@@ -1,4 +1,5 @@
 <template>
+<!-- is属性を利用すると、複数のコンポーネントを切り替える事ができる -->
   <component
     v-bind:is="componentName"
     :commonSettings="commonSettings"
