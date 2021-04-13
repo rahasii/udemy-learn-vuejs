@@ -7,26 +7,12 @@
       </li>
     </ul>
     <button id="display_botton" v-on:click="linkDisplay">{{ buttonName }}</button>
-    <div id="description">
+    <div class="description">
     <p>v-on:click="linkDisplay"が付加</p>
     <p>linkDisplayでは表示のフラグとボタンの文字の切替を行う</p>
     </div>
   </div>
 </template>
-
-<style>
-  #link_display_space {
-    height: 20px;
-  }
-  #display_botton {
-    width: 115px;
-  }
-  #description {
-    size: 12px;
-    background: #41b883;
-    color: aliceblue;
-  }
-</style>
 
 <script>
 

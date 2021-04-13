@@ -1,19 +1,27 @@
 <template>
   <div class="lesson">
     <p>{{componentName}}</p>
+    <div class="description">
+    <p>v-for 繰り返しの描画</p>
+    </div>
     <ul>
       <!-- <li v-for="language in languages">{{language}}</li> -->
       <!-- Elements in iteration expect to have 'v-bind:key' directives -->
       <li v-for="(language , key) in languages" :key="key">{{language}}</li>
     </ul>
     <ul>
-      <p>{{message}}</p>
+      <div class="description">
+    <p>v-model 双方向データバインディング</p>
+    </div>
     </ul>
     <ul>
-      <button v-on:click="clickHandler">{{buttonName}}!</button>
+      <button v-on:click="clickHandler">{{buttonName}}</button>
     </ul>
     <ul>
       <input type="text" v-model="message" />
+    </ul>
+    <ul>
+      <p>入力中の文字：{{message}}</p>
     </ul>
   </div>
 </template>
@@ -31,20 +39,12 @@ export default {
       message: 'Hello Vuejs!',
       languages: ['JavaScript', 'Ruby', 'Python'],
       clicked: false,
-      buttonName: 'Click'
+      buttonName: 'Helloを入力する'
     }
   },
   methods: {
     clickHandler: function () {
-      if (this.clicked) {
-        this.message = 'Hello Vuejs!'
-        this.clicked = false
-        this.buttonName = 'Click'
-      } else {
-        this.message = 'Clicked!'
-        this.clicked = true
-        this.buttonName = 'Return'
-      }
+      this.message = 'Hello'
     }
   }
 }
