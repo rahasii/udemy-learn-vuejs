@@ -11,8 +11,8 @@
     </ul>
     <ul>
       <div class="description">
-    <p>v-model 双方向データバインディング</p>
-    </div>
+        <p>v-model 双方向データバインディング</p>
+      </div>
     </ul>
     <ul>
       <button v-on:click="clickHandler">{{buttonName}}</button>
@@ -23,12 +23,25 @@
     <ul>
       <p>入力中の文字：{{message}}</p>
     </ul>
+    <ul>
+      <div class="description">
+        <p>compornent</p>
+      </div>
+    </ul>
+    <ul>
+      <Hello></Hello>
+    </ul>
   </div>
 </template>
 
 <script>
 
+import Hello from './../Hello.vue'
+
 export default {
+  components: {
+    Hello: Hello 
+  },
   name: 'Lesson34',
   props: {
     commonSettings: Object,
