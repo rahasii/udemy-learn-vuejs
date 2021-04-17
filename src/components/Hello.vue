@@ -1,9 +1,13 @@
+<template>
+  <p>{{ text }}</p>
+</template>
+
 <script>
-
-import Vue from 'vue'
-
-Vue.component('Hello', {
-  template: '<p>Hello</p>'
-})
-
+export default {
+  data () {
+    return {
+      text: 'Hello'
+    }
+  }
+}
 </script>

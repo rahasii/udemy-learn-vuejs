@@ -25,11 +25,13 @@
     </ul>
     <ul>
       <div class="description">
-        <p>compornent</p>
+        <p>Lesson31 compornent</p>
       </div>
     </ul>
     <ul>
-      <Hello></Hello>
+      <template>
+        <Hello></Hello>
+      </template>
     </ul>
   </div>
 </template>
@@ -40,7 +42,7 @@ import Hello from './../Hello.vue'
 
 export default {
   components: {
-    Hello: Hello 
+    Hello: Hello
   },
   name: 'Lesson34',
   props: {

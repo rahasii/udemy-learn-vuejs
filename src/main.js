@@ -3,7 +3,7 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-import Lesson62 from './components/Lessons/Lesson62.vue'
+// import Lesson62 from './components/Lessons/Lesson62.vue'
 
 Vue.config.productionTip = false
 
@@ -15,8 +15,8 @@ new Vue({
   template: '<App/>'
 })
 
-new Vue({
-  el: '#app-62',
-  components: { Lesson62 },
-  template: '<Lesson62/>'
-})
+// new Vue({
+//   el: '#app-62',
+//   components: { Lesson62 },
+//   template: '<Lesson62/>'
+// })
